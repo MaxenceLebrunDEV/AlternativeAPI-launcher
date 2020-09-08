@@ -17,7 +17,10 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 public class LauncherMain extends AlternativeBase {
-	private GameFolder gameFolder = new GameFolder("customlauncher");
+	private GameFolder gameFolder = new GameFolder("LauncherDirectory"); 
+	/*
+	* GameFolder  est la directory dans %appdata%
+	*/
 	private LauncherPreferences launcherPreferences = new LauncherPreferences("Launcher Template AlternativeAPI", 950, 600, true);
 	private GameEngine gameEngine = new GameEngine(gameFolder, launcherPreferences, GameVersion.V_1_16_1, GameStyle.VANILLA);
 	private GameLinks gameLinks = new GameLinks("http://127.0.0.1/alternative/1_16_1/", "1.16.1.json");
